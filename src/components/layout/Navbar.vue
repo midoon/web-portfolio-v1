@@ -31,7 +31,7 @@
         <li v-for="item in Menu" :key="item.name">
           <a
             :href="item.href"
-            class="block transition ease-linear md:text-xl font-bold text-primary-text hover:text-secondary-text"
+            class="block transition ease-linear md:text-xl font-bold text-secondary-text hover:text-primary-text"
             @click="scrollToSection(item.href)"
             >{{ item.name }}</a
           >
