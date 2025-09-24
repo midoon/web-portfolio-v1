@@ -1,10 +1,13 @@
 <template>
   <section
-    class="flex flex-col justify-center items-center text-primary-text min-h-screen lg:mt-0"
+    class="flex flex-col justify-center items-center text-primary-text min-h-screen"
   >
     <div class="flex flex-col justify-center items-start">
-      <p class="text-xl font-roboto md:ml-2">Hello, I'm</p>
+      <p data-aos="fade-right" class="text-xl font-roboto md:ml-2">
+        Hello, I'm
+      </p>
       <p
+        data-aos="fade-right"
         class="text-7xl md:text-9xl font-roboto font-bold gap-0 md:tracking-widest"
       >
         HARUN
