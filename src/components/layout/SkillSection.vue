@@ -1,16 +1,29 @@
 <template>
-  <section id="skills" class="bg-accent-background">
-    <div class="grid grid-cols-2 lg:max-w-[80vw] pb-20">
+  <section id="skills" class="bg-accent-background py-20">
+    <p
+      data-aos="fade-up"
+      class="text-primary-text text-center text-3xl font-roboto underline-offset-8 underline mb-10"
+    >
+      Skills
+    </p>
+    <div
+      class="grid grid-cols-2 lg:max-w-[80vw] lg:grid-cols-4 lg:mx-auto gap-6 px-8"
+    >
       <!-- card skill -->
-      <div v-for="skill in skills" :key="skill.name" class="p-4">
+      <div v-for="skill in skills" :key="skill.name" class="">
         <div
-          class="bg-primary-background rounded-lg p-6 flex flex-col items-center text-center h-full hover:scale-105 transition-transform duration-300"
+          data-aos="flip-up"
+          class="bg-primary-background rounded-lg p-6 flex flex-col items-center text-center h-full hover:scale-105 transition-transform duration-300 lg:flex-row"
         >
           <img :src="skill.icon" :alt="skill.name" class="w-16 h-16 mb-4" />
-          <h3 class="text-xl font-semibold mb-2 text-primary-text">
-            {{ skill.name }}
-          </h3>
-          <p class="text-secondary-text">{{ skill.description }}</p>
+          <div class="lg:text-left lg:ml-6">
+            <h3 class="text-xl font-semibold mb-2 text-primary-text">
+              {{ skill.name }}
+            </h3>
+            <p class="hidden text-secondary-text lg:block lg:text-sm">
+              {{ skill.description }}
+            </p>
+          </div>
         </div>
       </div>
     </div>
