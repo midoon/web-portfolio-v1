@@ -11,6 +11,9 @@ const HeroSection = defineAsyncComponent(() =>
 const AboutSection = defineAsyncComponent(() =>
   import("@/components/layout/AboutSection.vue")
 );
+const SkillSection = defineAsyncComponent(() =>
+  import("@/components/layout/SkillSection.vue")
+);
 </script>
 
 <template>
@@ -18,5 +21,6 @@ const AboutSection = defineAsyncComponent(() =>
     <Navbar />
     <HeroSection />
     <AboutSection />
+    <SkillSection />
   </div>
 </template>

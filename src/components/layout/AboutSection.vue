@@ -33,13 +33,17 @@
       <!-- button -->
       <div class="flex items-center gap-2">
         <a
+          data-aos="fade-left"
           href=""
-          class="text-secondary-text bg-primary-background px-5 py-2 rounded-md hover:text-primary-text hover:cursor-pointer"
+          class="bg-primary-background px-5 py-2 rounded-md text-secondary-text hover:text-primary-text hover:cursor-pointer"
           >Download CV</a
         >
-        <a href="" class="bg-primary-background p-2 rounded"
+        <a
+          data-aos="fade-left"
+          href=""
+          class="bg-primary-background p-2 rounded group"
           ><svg
-            class="w-6 h-6 text-gray-800 dark:text-white"
+            class="w-6 h-6 text-secondary-text group-hover:text-primary-text"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -54,9 +58,12 @@
             />
           </svg>
         </a>
-        <a href="" class="bg-primary-background p-2 rounded"
+        <a
+          data-aos="fade-left"
+          href=""
+          class="bg-primary-background p-2 rounded group"
           ><svg
-            class="w-6 h-6 text-gray-800 dark:text-white"
+            class="w-6 h-6 text-secondary-text group-hover:text-primary-text"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
